@@ -1,0 +1,217 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "DecToBin",
+            "request": "launch",
+            "mainClass": "DecToBin",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "BinToDec",
+            "request": "launch",
+            "mainClass": "BinToDec",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "RangeOfPrime",
+            "request": "launch",
+            "mainClass": "RangeOfPrime",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "prime2",
+            "request": "launch",
+            "mainClass": "prime2",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "Oloading_Datatype",
+            "request": "launch",
+            "mainClass": "Oloading_Datatype",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "Oloading_params",
+            "request": "launch",
+            "mainClass": "Oloading_params",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "BinomialCoff",
+            "request": "launch",
+            "mainClass": "BinomialCoff",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "Product",
+            "request": "launch",
+            "mainClass": "Product",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "Swap",
+            "request": "launch",
+            "mainClass": "Swap",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "abhishek",
+            "request": "launch",
+            "mainClass": "abhishek",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "Basic",
+            "request": "launch",
+            "mainClass": "Basic",
+            "projectName": "Function_8ba1ec8d"
+        },
+        {
+            "type": "java",
+            "name": "mcqseries",
+            "request": "launch",
+            "mainClass": "mcqseries",
+            "projectName": "Function_3b1987ab"
+        },
+        {
+            "type": "java",
+            "name": "CallByvalRef",
+            "request": "launch",
+            "mainClass": "CallByvalRef",
+            "projectName": "Function_3b1987ab"
+        },
+        {
+            "type": "java",
+            "name": "DecToBin",
+            "request": "launch",
+            "mainClass": "DecToBin",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "BinToDec",
+            "request": "launch",
+            "mainClass": "BinToDec",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "RangeOfPrime",
+            "request": "launch",
+            "mainClass": "RangeOfPrime",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "Prime",
+            "request": "launch",
+            "mainClass": "Prime",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "Oloading_Datatype",
+            "request": "launch",
+            "mainClass": "Oloading_Datatype",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "Oloading_para",
+            "request": "launch",
+            "mainClass": "Oloading_para",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "BinomialCoff",
+            "request": "launch",
+            "mainClass": "BinomialCoff",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "factorial",
+            "request": "launch",
+            "mainClass": "factorial",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "Product",
+            "request": "launch",
+            "mainClass": "Product",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "Swap",
+            "request": "launch",
+            "mainClass": "Swap",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "Fu_sum",
+            "request": "launch",
+            "mainClass": "Fu_sum",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "type": "java",
+            "name": "f1",
+            "request": "launch",
+            "mainClass": "f1",
+            "projectName": "Function_41cdf326"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to Chrome",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Basic",
+            "request": "launch",
+            "mainClass": "Basic",
+            "projectName": "Function_41cdf326"
+        }
+    ]
+}

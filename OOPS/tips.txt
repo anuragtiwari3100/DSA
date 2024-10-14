@@ -1,0 +1,5 @@
+1.In Java, the main method is required to be both public and static for specific reasons:
+Public: The main method needs to be public so that it can be accessed and called by the Java runtime system when the program is executed. If the main method were not public, the Java runtime system would not be able to locate and execute it.
+Static: The main method needs to be static because it is called by the Java runtime system before any objects of the class are created. Static methods belong to the class itself rather than to any specific instance of the class, and can be called directly on the class without the need for an object to be instantiated.
+Additionally, making the main method static ensures that it can be called without having to create an instance of the class, which is important because the main method is the entry point of a Java program and is called by the Java Virtual Machine (JVM) to start the execution of the program.
+Therefore, in Java, the public static void main(String[] args) method is a convention that must be followed in order for the Java runtime system to correctly execute the program.

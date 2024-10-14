@@ -1,0 +1,161 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "interfec",
+            "request": "launch",
+            "mainClass": "interfec",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "Abstraction",
+            "request": "launch",
+            "mainClass": "Abstraction",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "abstarction",
+            "request": "launch",
+            "mainClass": "abstarction",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "abstarcion",
+            "request": "launch",
+            "mainClass": "abstarcion",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "PolymorphismMeathodOverriding",
+            "request": "launch",
+            "mainClass": "PolymorphismMeathodOverriding",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "Polymorphism",
+            "request": "launch",
+            "mainClass": "Polymorphism",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "inharitAbhi",
+            "request": "launch",
+            "mainClass": "inharitAbhi",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "constructexample",
+            "request": "launch",
+            "mainClass": "constructexample",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "construct",
+            "request": "launch",
+            "mainClass": "construct",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "EncapsulationExample",
+            "request": "launch",
+            "mainClass": "EncapsulationExample",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "Mainoop",
+            "request": "launch",
+            "mainClass": "Mainoop",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "OOPS",
+            "request": "launch",
+            "mainClass": "OOPS",
+            "projectName": "OOPS_b8a0c2f8"
+        },
+        {
+            "type": "java",
+            "name": "methodOverloding",
+            "request": "launch",
+            "mainClass": "methodOverloding",
+            "projectName": "OOPS_54ee9d16"
+        },
+        {
+            "type": "java",
+            "name": "interFac",
+            "request": "launch",
+            "mainClass": "interFac",
+            "projectName": "OOPS_54ee9d16"
+        },
+        {
+            "type": "java",
+            "name": "clasAbstartc",
+            "request": "launch",
+            "mainClass": "clasAbstartc",
+            "projectName": "OOPS_54ee9d16"
+        },
+        {
+            "type": "java",
+            "name": "methodOverrid",
+            "request": "launch",
+            "mainClass": "methodOverrid",
+            "projectName": "OOPS_3488dac4"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AcessSpeciFir",
+            "request": "launch",
+            "mainClass": "AcessSpeciFir",
+            "projectName": "OOPS_3488dac4"
+        },
+        {
+            "type": "java",
+            "name": "constrortor",
+            "request": "launch",
+            "mainClass": "constrortor",
+            "projectName": "OOPS_3488dac4"
+        },
+        {
+            "type": "java",
+            "name": "gettersetter",
+            "request": "launch",
+            "mainClass": "gettersetter",
+            "projectName": "OOPS_3488dac4"
+        },
+        {
+            "type": "java",
+            "name": "inharitens",
+            "request": "launch",
+            "mainClass": "inharitens",
+            "projectName": "OOPS_3488dac4"
+        },
+        {
+            "type": "java",
+            "name": "methodOverloding",
+            "request": "launch",
+            "mainClass": "methodOverloding",
+            "projectName": "OOPS_3488dac4"
+        }
+    ]
+}
