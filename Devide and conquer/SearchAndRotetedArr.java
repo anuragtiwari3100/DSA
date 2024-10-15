@@ -1,7 +1,16 @@
+<<<<<<< HEAD
 
 
 //solves it usinf  a single loop  means suing iteration
 public class SearchAndRotetedArr {
+=======
+//pemding
+//solves it usinf  a single loop  means suing iteration
+public class SearchAndRotetedArr {
+  
+
+
+>>>>>>> 3978495e210f8fd1fd04ecc47acfb2bf225ba4e6
 
     public static int SearchInRotatedaArr(int arr[],int tar,int si ,int ei){
         //base Case
@@ -48,3 +57,4 @@ public class SearchAndRotetedArr {
     }
     
 }
+
