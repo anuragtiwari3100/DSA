@@ -1,7 +1,7 @@
-
+//pemding
 //solves it usinf  a single loop  means suing iteration
 public class SearchAndRotetedArr {
-
+  
 
 
 
@@ -52,3 +52,4 @@ public class SearchAndRotetedArr {
     }
     
 }
+
