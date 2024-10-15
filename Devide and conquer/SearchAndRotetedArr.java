@@ -1,13 +1,11 @@
+//doubt is ther
 
 //solves it usinf  a single loop  means suing iteration
 public class SearchAndRotetedArr {
 
-
-
-
     public static int SearchInRotatedaArr(int arr[],int tar,int si ,int ei){
         //base Case
-        if(si > ei){
+        if(si >= ei){
             return -1;
         }
         
@@ -17,19 +15,17 @@ public class SearchAndRotetedArr {
            //case found
            if(arr[mid] == tar){
             return mid;
-
            }
 
-           // mid onL1
+           // mid on L1
            if(arr[si] <= arr[mid]){
-            //case:1 =>lefft
+            //case:a =>lefft
             if(arr[si] <= tar &&  tar <= arr[mid]){
                 return  SearchInRotatedaArr(arr,tar,si,mid-1);
             }else{
-                //case:2=> right
+                //case:b=> right
                return  SearchInRotatedaArr(arr,tar,mid+1,ei);
             }
-
 
            }
            //Mid on L2
