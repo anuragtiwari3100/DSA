@@ -1,0 +1,62 @@
+
+Differences between Greedy and Dynamic Programming approaches for the Knapsack problem:
+
+1. Optimality:
+   - Greedy: Does not always guarantee the optimal solution.
+   - Dynamic Programming: Guarantees the optimal solution.
+
+2. Problem-solving approach:
+   - Greedy: Makes locally optimal choices at each step.
+   - Dynamic Programming: Considers all possible combinations to find the global optimum.
+
+3. Time complexity:
+   - Greedy: Generally faster, often O(n log n) due to sorting.
+   - Dynamic Programming: Usually O(nW), where n is the number of items and W is the knapsack capacity.
+
+4. Space complexity:
+   - Greedy: Typically O(1) or O(n) for sorting.
+   - Dynamic Programming: O(nW) for the memoization table.
+
+5. Applicability:
+   - Greedy: Works well for fractional knapsack problems.
+   - Dynamic Programming: Suitable for 0/1 knapsack problems.
+
+6. Decision making:
+   - Greedy: Makes irrevocable decisions based on current information.
+   - Dynamic Programming: Considers all possible decisions and their consequences.
+
+7. Subproblem structure:
+   - Greedy: Does not explicitly solve subproblems.
+   - Dynamic Programming: Breaks down the problem into overlapping subproblems.
+
+8. Flexibility:
+   - Greedy: Less flexible, specific to certain problem structures.
+   - Dynamic Programming: More flexible, adaptable to various problem variations.
+
+9. Implementation complexity:
+   - Greedy: Generally simpler to implement.
+   - Dynamic Programming: More complex, requires careful subproblem definition and state management.
+
+10. Memory usage:
+    - Greedy: Typically uses less memory.
+    - Dynamic Programming: Requires more memory for storing subproblem solutions.
+
+
+
+
+
+
+
+
+
+
+Criteria	Greedy Approach	Dynamic Programming Approach
+Problem Type	Solves the Fractional Knapsack (can take fractions of items)	Solves the 0/1 Knapsack (must take entire items)
+Optimality	Provides an optimal solution only for the Fractional Knapsack	Always provides the optimal solution for the 0/1 Knapsack
+Strategy	Selects items based on a heuristic (e.g., highest value-to-weight ratio)	Considers all possible combinations of items by building a solution incrementally
+Time Complexity	O(n log n) (due to sorting items by value-to-weight ratio)	O(nW), where n is the number of items and W is the knapsack's capacity
+Space Complexity	O(1) if sorting is done in-place	O(nW) due to storing results in a table (2D array)
+Partial Solutions	Allows selecting parts of items (fractional)	Does not allow fractional selection (only entire items)
+Use Cases	Effective when fractional items are allowed (e.g., resource allocation problems)	Useful for problems where items can't be split (e.g., choosing discrete items)
+Implementation Complexity	Simple to implement, requires sorting and greedy selection	More complex, requires creating and filling a DP table
+
