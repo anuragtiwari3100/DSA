@@ -10,6 +10,25 @@ public class FactoralOfSeries {
         }
     }
 
+    /*
+    
+
+
+    int main()
+{
+int n = 10;
+int fact[n];
+fact[0]=1;
+for(int i=1;i<=n;i++)
+{
+fact[i] = fact[i-1]*i;
+printf("\n%d! is equal to %d",i,fact[i]);
+}
+return 0;
+}
+
+     */
+
     public static void main(String[] args) {
         System.out.println("Radhe-Radhe");
         calFactoralOfSeries(10); // Call the method with the desired range
