@@ -1,5 +1,5 @@
-
-
+import java.util.Scanner;
+ public class Buble{
     public static void Bubble(int arr[]) {
         int totalSwaps = 0; // Variable to count total swaps
         for (int i = 0; i < arr.length; i++) {
@@ -41,8 +41,7 @@
         Bubble(arr);
         System.out.println("Sorted array:");
         PrintArr(arr);
+        sc.close();
     }
 }
- {
-    
-}
+
