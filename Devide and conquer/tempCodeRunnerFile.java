@@ -23,7 +23,7 @@ public static void printArr(int arr[]){
            Merge(arr,si,mid,ei);   
     } 
  
-    public static void  Merge(int arr[], int si, int mid, int ei) { 
+    public static void  Merge(int arr[], int si, int mid, int ei) {
         // for for finding the size of  temp arr=>left(0,3)=4,Right(4,6)=3 then size =ei-si+1=>6-0+1=7
        int temp[] = new int[ei - si + 1];
        int i = si; // iterator for left part
@@ -86,38 +86,3 @@ System.out.print("enter the value of Array having size of "+n+" ");
 
     }
 }
-
-
-
-/*
- 
-For the input [6, 3, 9, 5, 2, 8], you could visualize the call stack as:
-
-scss
-Copy code
-
-|-------------------------------|
-| mergeSort(arr, 0, 5)           | <- Top of the stack
-|-------------------------------|
-| mergeSort(arr, 0, 2)           | 
-|-------------------------------|
-| mergeSort(arr, 0, 1)           | 
-|-------------------------------|
-| mergeSort(arr, 0, 0)           | <- Base case reached
-|-------------------------------|
-| mergeSort(arr, 1, 1)           | <- Base case reached
-|-------------------------------|
-| mergeSort(arr, 2, 2)           | <- Base case reached
-|-------------------------------|
-| mergeSort(arr, 3, 5)           |
-|-------------------------------|
-| mergeSort(arr, 3, 4)           |
-|-------------------------------|
-| mergeSort(arr, 3, 3)           | <- Base case reached
-|-------------------------------|
-| mergeSort(arr, 4, 4)           | <- Base case reached
-|-------------------------------|
-| mergeSort(arr, 5, 5)           | <- Base case reached
-|-------------------------------|
-
- */
