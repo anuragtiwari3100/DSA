@@ -6,8 +6,19 @@ public class BinarySerch {
         
         while(start<=end){
            int mid=(start+end)/2;
+   
 
-           if(numbers[mid]==key){  //found
+
+            /*
+                 // Reverse order means:
+ if (numbers[mid] > key) { // Search in the right half
+  start = mid + 1;
+} else { // Search in the left half
+  end = mid - 1;
+}
+            */
+
+           if(numbers[mid]==key){  //found 
                      return mid;
            }
            if(numbers[mid]<key){  //right half

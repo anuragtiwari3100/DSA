@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Quick{
+
     public static void printArr(int arr[]){
         System.out.println("Elements  in linear fashion are:");
            for(int i=0;i<arr.length;i++){
@@ -15,7 +16,7 @@ public class Quick{
             return;
          }
     int pIdx=partion(arr,si,ei);
-         quickSort(arr,si,pIdx-1);//left
+         quickSort(arr,si,pIdx-1);//left   ...did not include the pivot element beccausee it is it's correct position 
         quickSort(arr,pIdx+1,ei);//left
 
       }
@@ -42,6 +43,30 @@ public class Quick{
          return i;
      
       }
+
+
+      public static void swap(int[] arr, int i, int j) {
+         int temp = arr[i];
+         arr[i] = arr[j];
+         arr[j] = temp;
+     }
+
+      public static int partition2(int arr[], int si, int ei) {
+         int pivot = arr[ei];  // Choose the last element as the pivot
+         int i = si - 1;       // Index to place elements smaller than the pivot
+ 
+         for (int j = si; j < ei; j++) {
+             if (arr[j] <= pivot) {
+                 i++;
+                 // Use the swap function
+                 swap(arr, i, j);
+             }
+         }
+         // Place the pivot in its correct position
+         i++;
+         swap(arr, i, ei);
+         return i; // Return the partition index
+     }
 
       
      public static void main(String[]args){

@@ -23,7 +23,7 @@ public static void printArr(int arr[]){
            Merge(arr,si,mid,ei);   
     } 
  
-    public static void  Merge(int arr[], int si, int mid, int ei) { 
+    public static void  Merge(int arr[], int si, int mid, int ei){ 
         // for for finding the size of  temp arr=>left(0,3)=4,Right(4,6)=3 then size =ei-si+1=>6-0+1=7
        int temp[] = new int[ei - si + 1];
        int i = si; // iterator for left part
