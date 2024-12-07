@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class PairOfArr {
+
     public static void Printingpair(int numbers[]){
         int NoOfpair=0;
         for(int i=0;i<numbers.length;i++){
@@ -12,6 +13,12 @@ public class PairOfArr {
         }
          System.out.println("Total Pairs ="+NoOfpair);
     }
+
+    public static int calculatePairs(int arr[]) {
+        int n = arr.length;
+        return (n * (n - 1)) / 2; // O(1)
+    }
+    
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int numbers[]=new int[5];
@@ -22,6 +29,8 @@ public class PairOfArr {
         
         System.out.println("Pairs of enterned array is");
         Printingpair(numbers);
+        int optimalPairs = calculatePairs(numbers);
+        System.out.println("Optimal number of pairs: " + optimalPairs);
         sc.close();
     }
     

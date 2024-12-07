@@ -18,6 +18,11 @@ public class SubArray {
             }
            System.out.println("Total sub arrays are: "+NoOfSubArray);  
        }
+
+       public static   int  possiblePair(int arr[]){
+        int n = arr.length;
+        return  n*((n+1)/2);
+    }
     public static void main(String[]args){
          Scanner sc=new Scanner(System.in);
          int numbers[]=new int[3];
@@ -25,6 +30,7 @@ public class SubArray {
          for(int i=0;i<numbers.length;i++){
             numbers[i]=sc.nextInt();
          }
+         possiblePair(numbers);
          PrintingSubArray(numbers);
          sc.close();
 

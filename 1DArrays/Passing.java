@@ -20,3 +20,23 @@ public class Passing {
       
     
 }
+
+
+ 
+/*
+
+ 
+
+In Java, reference data types (e.g., arrays, objects) 
+are passed by reference, meaning the function gets access to the actual
+ object. Changes made to the object inside the function affect the original object,
+  as both share the same reference.
+
+
+  In Java, primitive data types (e.g., int, float, char) 
+  are passed by value, meaning a copy of the value is sent 
+  to a function. Changes inside the function do not affect the 
+  original variable.
+
+
+ */

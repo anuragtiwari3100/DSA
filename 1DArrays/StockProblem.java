@@ -1,11 +1,4 @@
 public class StockProblem {
-
-
-
-
-
-
-
     public static int  buyAndSellStockes(int prices[]){
           int buyPrice =Integer.MAX_VALUE;
           int maxProfit = 0;
@@ -20,6 +13,8 @@ public class StockProblem {
            return maxProfit;
 
     }
+
+    
     public static void main(String[] args) {
         int prices [] = {7,1,5,3,6,4};
         System.out.println(buyAndSellStockes(prices));
