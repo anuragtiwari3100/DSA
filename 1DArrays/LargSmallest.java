@@ -29,6 +29,7 @@ public static int[]  calclateLargestandSmallest(int arr[]){
       if (numbers == null || numbers.length == 0) {
          throw new IllegalArgumentException("Array must not be null or empty");
       }
+      
       for (int i = 0; i < numbers.length; i++) {
          if (largest < numbers[i]) {
             largest = numbers[i];
@@ -63,9 +64,7 @@ public static int[]  calclateLargestandSmallest(int arr[]){
       int res = getlargest(numbers);
       System.out.println("Largest number  among all eneterned number is " + res);
 
-      int minMax[] = calclateLargestandSmallest(numbers);
-      System.out.println("Largest number is:"+minMax[0]);
-         System.out.println("Smallest number is:"+minMax[1]);
+      
       sc.close();
    }
 }

@@ -16,12 +16,14 @@ public class findMaxNegative {
                 maxNegative = Math.max(maxNegative,arr[num]);
              }
              if(!foundNegative){ 
+            
                 System.out.println("No negative number found in the array");
                 return -1;
              }
             
            }
            return maxNegative;
+
     }
 
 

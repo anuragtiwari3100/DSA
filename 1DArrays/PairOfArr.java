@@ -14,6 +14,12 @@ public class PairOfArr {
          System.out.println("Total Pairs ="+NoOfpair);
     }
 
+
+    /*
+     
+    Input: arr[] = {1, 2} 
+Output: (1, 1), (1, 2), (2, 1), (2, 2).
+     */
     public static int calculatePairs(int arr[]) {
         int n = arr.length;
         return (n * (n - 1)) / 2; // O(1)

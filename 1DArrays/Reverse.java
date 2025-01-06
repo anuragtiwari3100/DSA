@@ -31,7 +31,7 @@ public class Reverse {
 
     public static void reverseArray(ArrayList<Integer> arr, int m) {
         // Starting index is m + 1, ending index is arr.size() - 1
-        int si = m + 1;
+        int si = m;
         int ei = arr.size() - 1;
         
         // Reverse elements between indices si and ei
@@ -57,10 +57,26 @@ public class Reverse {
     //     numbers[i]=sc.nextInt();
     //  }
     //  reversing(numbers);
-     revSubArr(numbers,2,4);
-     for(int i=0;i<numbers.length;i++){
-          System.out.print(numbers[i]+" ");
-     }
+    //  revSubArr(numbers,2,4);
+//     for(int i=0;i<numbers.length;i++){
+//       System.out.print(numbers[i]+" ");
+//  }
+ 
+    ArrayList<Integer> list = new ArrayList<>();
+      list.add(1);
+      list.add(2);
+      list.add(3);
+      list.add(4);
+      System.out.println("Before  reversing the  list");
+      for(int x:list){
+        System.out.  println(x);
+      }
+      reverseArray(list,0);
+      System.out.println("After reversing the list");
+      for(int x :list){
+        System.out.println(x);
+      }
+   
      System.out.println();
      sc.close();
      }    
