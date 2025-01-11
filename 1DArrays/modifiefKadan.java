@@ -3,15 +3,15 @@ public class modifiefKadan {
            int maxNegative = Integer.MIN_VALUE;
            int  currSum = 0;
            int maxSum = Integer.MIN_VALUE;
-           boolean hasNegative = false;
+           boolean hasPositive = false;
               for(int i=0; i<arr.length; i++){
                    if(arr[i]>0){
-                    hasNegative = true;
+                     hasPositive = true;
                    }
                    if(arr[i]<0){
                     maxNegative =Math.max(maxNegative,arr[i]);
                    }
-                   if(hasNegative){
+                   if(hasPositive){
                     currSum = currSum + arr[i];
                      if(currSum < 0){
                         currSum =0;
@@ -19,7 +19,7 @@ public class modifiefKadan {
                     maxSum = Math.max(maxSum,currSum);
                    }
               }
-              return  hasNegative ? maxSum :maxNegative;
+              return  hasPositive ? maxSum :maxNegative;
         }
         public static int KanadAlgo1(int arr[]){
             int maxNegative = Integer.MIN_VALUE;

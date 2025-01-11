@@ -6,7 +6,8 @@ public class KanadAlgoOccurrenceOfSubarraySum {
         boolean hasPositive = false;
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > 0) hasPositive = true;
+            if (arr[i] > 0)
+             hasPositive = true;
 
             currSum += arr[i];
 
@@ -29,7 +30,7 @@ public class KanadAlgoOccurrenceOfSubarraySum {
             return maxSum;
         } else {
             // For negative-only arrays, return the maximum element
-            return handleNegativeOnlyArray(arr);
+          return    handleNegativeOnlyArray(arr);  //yaha value nahi pura function return kar rahe hai
         }
     }
 
