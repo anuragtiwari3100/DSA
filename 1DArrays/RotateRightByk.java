@@ -1,6 +1,8 @@
-public class rotateByK{
+//  Rotating by ride side 
+  //Approach2 
+public class RotateRightByk{
   
-   public static void rotate(int arr[],int k){
+   public static void rotateRightByk(int arr[],int k){
       int n = arr.length;
       int tempArr[] = new int[n];
       for(int i=0; i<arr.length; i++){
@@ -15,6 +17,27 @@ public class rotateByK{
        System.arraycopy(tempArr, 0, arr, 0, tempArr.length);
    }
    
+  //Approach2 
+public static  void  rotateRightByk2(int arr[] ,int k){
+       
+      int n= arr.length;
+       k = k%n; // To handle cases where k is greater than n
+       reverse(arr,0,n-1);
+       reverse(arr,0,k-1);
+       reverse(arr,k,n-1);
+
+       printArr(arr);
+   }
+
+
+ public static  void  reverse(int arr[],int si, int ei){
+            while(si<=ei){
+               int temp = arr[si];
+               arr[si] = arr[ei];
+               arr[ei] =  temp;
+            }
+   }
+
 
 public static boolean  isRotated(int arr[]){
    int count =0;
@@ -31,12 +54,14 @@ public static boolean  isRotated(int arr[]){
    return  count == 1;
 }
 
+
   public static void printArr(int arr[]){
    for(int i=0; i<arr.length; i++){
       System.out.print(arr[i]+" ");
    }
   }
-   public static void main(String args[]){
+ 
+  public static void main(String args[]){
        int arr[] = new int[]{1,2,3,4,5};
        int k=2 ; //indicating the posit by whihc we have to rotate
       //  printArr(arr);
@@ -46,4 +71,5 @@ public static boolean  isRotated(int arr[]){
       printArr(arr);
       System.out.println(isRotated(arr));
    }
+
 }
