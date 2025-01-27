@@ -30,6 +30,21 @@ public static  void  rotateRightByk2(int arr[] ,int k){
    }
 
 
+   public static void rotatRightByOne(int arr[]){
+      int n = arr.length-1;
+      int temp= arr[0];
+      for(int i=1; i<arr.length; i++){
+          arr[i-1] = arr[i];
+      }
+     
+     arr[n] = temp;
+  System.out.println(temp);
+    
+     
+      printArr(arr);
+  }
+
+
  public static  void  reverse(int arr[],int si, int ei){
             while(si<=ei){
                int temp = arr[si];
