@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class MoveZero {
+public class moveZerosToRight {
 
     //Aproach1.
     public static void moveZero(int arr[]){

@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 class  Union {
-    
-            //Approach1 => Not Suitable for some TCs
+
+            //Approach1 =>  T.C(O(m+n)) and S.C => O(n)
             public static  ArrayList<Integer> findUnion(int arr1[], int arr2[]){
                 int n= arr1.length;
                 int m = arr2.length;
@@ -22,7 +22,7 @@ class  Union {
             return Union;
             }
 
-            //Approach2
+            //Approach2 =>T.C(O(m+n)) and S.C => O(n)
                         static ArrayList<Integer> FindUnion(int arr1[], int arr2[], int n, int m) {
             HashSet <Integer> s=new HashSet<>();
             ArrayList < Integer > Union=new ArrayList<>();
@@ -35,10 +35,56 @@ class  Union {
             return Union;
             }
 
+
+
+                    //Approach3=> T.C(O(m+n)) and S.C => O(1)
+                            static ArrayList<Integer> findUnion3(int arr1[], int arr2[]) {
+                                int n = arr1.length;
+                                int m = arr2.length;
+                                int i = 0, j = 0;
+                                
+                                ArrayList<Integer > Union=new ArrayList<>(); 
+                                while (i < n && j < m) {
+                                    if (arr1[i] <= arr2[j])
+                                    {
+                                    if (Union.size() == 0 || Union.get(Union.size()-1) != arr1[i]){
+                                            Union.add(arr1[i]);
+                                    }
+                                    
+                                    i++;
+                                    } else 
+                                    {
+                                    if (Union.size() == 0 || Union.get(Union.size()-1) != arr2[j]){
+                                            Union.add(arr2[j]);
+                                    }
+                                    
+                                    j++; 
+                                    }
+                                }
+                                while (i < n) 
+                                {
+                                    if (Union.get(Union.size()-1) != arr1[i])
+                                    Union.add(arr1[i]);
+                                    i++;
+                                }
+                                while (j < m) 
+                                {
+                                    if (Union.get(Union.size()-1) != arr2[j])
+                                    Union.add(arr2[j]);
+                                    j++;
+                                }
+                                return Union;
+                                
+                                    }
+
+
+
     public static void main(String[] args) {
-  int arr1[] = {1,2,3,4,5,9,10};
-  int arr2[] = {3,4,5,6,7,8};
-   ArrayList<Integer> res =findUnion(arr1, arr2);
+//   int arr1[] = {1,2,3,4,5,9,10};
+//   int arr2[] = {3,4,5,6,7,8};
+int arr1[] = {5,2,4,6,8};
+int arr2[] = {9,2,6,9,3,5};
+   ArrayList<Integer> res =findUnion3(arr1, arr2);
    System.out.print(res+" ");
    
   
