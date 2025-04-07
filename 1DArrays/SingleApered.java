@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class SingleApered {
 
 
@@ -48,10 +51,47 @@ public class SingleApered {
      if (hashArr[j] == 1) {
          return j - offset; 
      }
- }`
+ }
  
  return -1;
     }
+
+
+    public static int getSingleElement(int []arr) {
+        //size of the array:
+        int n = arr.length;
+
+        // Declare the hashmap.
+        // And hash the given array:
+        HashMap<Integer, Integer> mpp = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            int value = mpp.getOrDefault(arr[i], 0);
+            mpp.put(arr[i], value + 1);
+        }
+
+        //Find the single element and return the answer:
+        for (Map.Entry<Integer, Integer> it : mpp.entrySet()) {
+            if (it.getValue() == 1) {
+                return it.getKey();
+            }
+        }
+
+        //This line will never execute
+        //if the array contains a single element.
+        return -1;
+    }
+
+
+    public static  int checkAppearance3(int arr[]){
+        int xor =0;
+        for(int i=0; i<arr.length; i++){
+            xor = xor^arr[i];
+        }
+      return  xor;
+        }
+  
+     
+    
    
     public static void main(String[] args){
         int arr[] = {1,1,2,2,4,4,7};

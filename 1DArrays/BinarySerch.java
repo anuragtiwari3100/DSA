@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.System;
 public class BinarySerch {
     public static int  Dundho(int numbers[],int key){      
         int start=0,  end=numbers.length-1;
@@ -11,11 +10,11 @@ public class BinarySerch {
 
             /*
                  // Reverse order means:
- if (numbers[mid] > key) { // Search in the right half
-  start = mid + 1;
-} else { // Search in the left half
-  end = mid - 1;
-}
+          if (numbers[mid] > key) { // Search in the right half
+            start = mid + 1;
+          } else { // Search in the left half
+            end = mid - 1;
+          }
             */
 
            if(numbers[mid]==key){  //found 

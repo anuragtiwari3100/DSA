@@ -2,7 +2,9 @@
 //  for this arr [-1,-2,-3,-4] => Answer  it will  give  0 but should be  -1 so write cases for that i.e HW
 import java.util.Scanner;
 public class kanadAlgo {
-    public static  int kadad(int numbers[]){
+
+    //it may not work where arr is completly  negative so we have to modify it 
+    public static  int kanad(int numbers[]){
         int ms=Integer.MIN_VALUE;
         int cs=0;
 
@@ -18,15 +20,15 @@ public class kanadAlgo {
 
 
     public static  void main(String[] args){
-        // int numbers[]={-2,-3,4,-1,1,-2,1,5,-3};
+        int numbers[]={1,2,-5,4,-3};
         Scanner sc=new Scanner(System.in);
-        int numbers[]=new int[9];
+        int numbers1[]=new int[9];
         System.out.println("Enter your Array having size of 9:");
         for(int i=0;i<numbers.length;i++){
             numbers[i]=sc.nextInt();
         }
        
-    int  ms=  kadad(numbers);
+    int  ms=  kanad(numbers);
            System.out.println("Sum of our max subArray is:"+ms);
        sc.close();
     }

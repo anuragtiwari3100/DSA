@@ -49,6 +49,48 @@ public class KanadAlgoOccurrenceOfSubarraySum {
     }
     
 
+    public static long maxSubarraySum(int[] arr, int n) {
+        long maxSum= Integer.MIN_VALUE;
+        long currSum = 0;
+        int start = 0;
+        int ansStart = -1, ansEnd = -1;
+        boolean hasPos = false;
+        long maxNegative = Integer.MAX_VALUE;
+        for (int i = 0; i < n; i++) {
+            if(arr[i]>0){
+                hasPos = true;
+            }
+            if (currSum == 0) {
+               start = i; // starting index
+
+            }
+            currSum += arr[i];
+
+            if (currSum > maxSum) {
+                maxSum = currSum;
+
+                ansStart = start;
+                ansEnd = i;
+            }
+            if (currSum < 0) {
+                currSum = 0;
+            }
+            if(!hasPos){
+                maxNegative = Math.max(maxNegative,arr[i]);
+            }
+        }    
+        print(arr,ansStart,ansEnd);
+        return hasPos ? maxSum : maxNegative;
+    }
+    
+         public static void print(int arr[], int ansStart, int ansEnd){
+       System.out.print("The subarray is: [");
+        for (int i = ansStart; i <= ansEnd; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.print("]\n sum is:");
+        }
+
     // Prints the subarray between start and end indices
     private static void printSubarray(int[] arr, int start, int end) {
         System.out.print("Subarray with max sum: ");

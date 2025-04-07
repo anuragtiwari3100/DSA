@@ -16,8 +16,25 @@ public class SubArray {
                 }
                 System.out.println();
             }
-           System.out.println("Total sub arrays are: "+NoOfSubArray);  
+           System.out.println("Total sub ar rays are: "+NoOfSubArray);  
        }
+
+       public static void PrintingSubArraySum(int numbers[]){
+        int NoOfSubArray=0;
+          for(int i=0;i<numbers.length;i++){    //defines start
+              int start=i;
+              for(int j=i;j<numbers.length;j++){ //defines end
+                  int end=j;
+                  for(int k=start; k<=end; k++){  //prints
+                      System.out.print(numbers[k]+" ");// subarray
+                  }
+                  NoOfSubArray++;
+                  System.out.println();
+              }
+              System.out.println();
+          }
+         System.out.println("Total sub ar rays are: "+NoOfSubArray);  
+     }
 
        public static   int  possiblSubArr(int arr[]){
         int n = arr.length;

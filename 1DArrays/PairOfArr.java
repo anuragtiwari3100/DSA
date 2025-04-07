@@ -14,6 +14,18 @@ public class PairOfArr {
          System.out.println("Total Pairs ="+NoOfpair);
     }
 
+    public static void Printingpair2(int numbers[]){
+        int NoOfpair=0;
+        for(int i=0;i<numbers.length;i++){
+            int curr=numbers[i];  //1,2,3,4,5(cur-1->2->3->4)
+            for(int j=i;j<numbers.length;j++){  //(1->1,2,3,4,5),(2->2,3,4,5),(3->3,4,5),(4->4,5)
+                System.out.print("("+curr+","+numbers[j]+")");
+               NoOfpair++;
+            }
+            System.out.println();
+        }
+         System.out.println("Total Pairs ="+NoOfpair);
+    }
 
     /*
      
