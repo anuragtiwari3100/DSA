@@ -1,5 +1,5 @@
 import java.util.*;
-class Main {
+public class Main {
 public static  List<Integer> nextGreaterPermutation(List<Integer> A){
       int n = A.size();
       int index=-1;
