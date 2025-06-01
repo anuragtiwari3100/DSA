@@ -24,13 +24,13 @@ public class Set_Matrix_Zeroes_App2 {
               return arr;
         }
         
-        public static void main(String[] args) {
+        public static void main(String[] args) { 
             System.out.println("Radhe-Krishn");
           int arr[][] = {
                         {0,1,2,0},
                         {3,4,5,2},
                         {1,3,1,5}
-          };
+          }; 
            int res[][] = setAllZeros(arr);
            for(int i=0; i<res.length; i++){
                for(int j=0; j<res[0].length; j++){

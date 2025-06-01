@@ -4,8 +4,8 @@
 
     public class Set_Matrix_Zeroes_App3 {
         static ArrayList<ArrayList<Integer>> zeroMatrix(ArrayList<ArrayList<Integer>> matrix, int n, int m) {
-            // int[] row = new int[n]; --> matrix[..][0]
-            // int[] col = new int[m]; --> matrix[0][..]
+            // int[] row = new int[n]; --> matrix[..][0]  // making the  0th col  of matrix as row array
+            // int[] col = new int[m]; --> matrix[0][..]  // making the  0th row  of matrix as  array
     
             int col0 = 1;
             // step 1: Traverse the matrix and
