@@ -16,7 +16,7 @@ public static void printArr(int arr[]){
         if(si>=ei){
               return ;
         }
-           //kam
+        //kam
            int mid = si+(ei-si)/2;  //->Similar to mid=(si+ei)/2
            mergeSort(arr,si,mid); //left part
            mergeSort(arr,mid+1,ei); //right part
@@ -59,6 +59,9 @@ public static void printArr(int arr[]){
            arr[i] = temp[k];
        }
    }
+
+
+
      
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);

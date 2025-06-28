@@ -12,7 +12,7 @@ public class Rotate_IMG_90_App1{
         }
         for(int i=0; i<row; i++){
             for(int j=0; j<col; j++){
-             resArr[j][n-1-i] = matrix[i][j];
+             resArr[j][i] = matrix[i][j];
             }
         }
         return resArr;

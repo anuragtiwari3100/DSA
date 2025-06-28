@@ -25,7 +25,6 @@ public class Set_Matrix_Zeroes_App2 {
         }
         
         public static void main(String[] args) { 
-            System.out.println("Radhe-Krishn");
           int arr[][] = {
                         {0,1,2,0},
                         {3,4,5,2},

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class prime2 {
 
 
-    // // onnly for n>=2
+    // // only for n>=2
     // public static boolean  isPrime(int n){
     //     //corners cases
     //     //2

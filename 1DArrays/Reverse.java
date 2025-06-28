@@ -61,6 +61,26 @@ public class Reverse {
 //     for(int i=0;i<numbers.length;i++){
 //       System.out.print(numbers[i]+" ");
 //  }
+
+
+
+
+
+/**
+ * 
+ ArrayList<Integer> list = new ArrayList<>();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the number of elements:");
+        int n = sc.nextInt();  // Get the number of elements
+
+        System.out.println("Enter the elements:");
+
+        // Take 'n' elements as input and add them to the list
+        for (int i = 0; i < n; i++) {
+            list.add(sc.nextInt());
+        }
+ */
  
     ArrayList<Integer> list = new ArrayList<>();
       list.add(1);

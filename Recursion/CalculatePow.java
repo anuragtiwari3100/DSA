@@ -11,6 +11,22 @@ public class CalculatePow {
        */
     return x*Calcexponent(x,n-1);
      }
+
+
+     public static  int  pow(int x,int n){
+
+      if(n==0){
+         return  0;
+      }
+      if(n<0){
+         x = 1/x;
+         n *=-1;
+
+      }
+
+      double ans =1;
+      
+     }
     public static void main(String[]args){
         Scanner sc=new Scanner(System.in);
         System.out.print("Enter the base:");

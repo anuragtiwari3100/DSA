@@ -3,6 +3,7 @@ public class RotateLeftByk {
     public static  void rotateLeftArr(int arr[],int k){
         int n = arr.length;
            k = k%n;
+
         int temp[] = new int[arr.length];
         
         for(int i=0; i<arr.length; i++){
@@ -47,6 +48,6 @@ public class RotateLeftByk {
 
     public static void main(String[] args) {
     int arr[] = new int[]{1,2,3,4,5};
-    rotateLeftArr(arr,2);
+    rotateLeftArr(arr,1);
     }
 }
